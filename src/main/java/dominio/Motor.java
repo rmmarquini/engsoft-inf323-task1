@@ -3,38 +3,28 @@ package dominio;
 
 public class Motor {
 
-    // O MOTOR INICIA DESLIGADO
-    private boolean ligado = false;
-
-    public void Motor() {}
-
-    /**
-     * PARA LIGAR O MOTOR PRECISA VERIFICAR SE ESTA DESLIGADO
-     */
-    protected void ligar() {
-        if (!isLigado()) {
-            this.ligado = true;
-        }
+    private boolean ligado;
+    
+    public void Motor() {
+        this.ligado = false;
     }
 
-    /** 
-     * PARA DESLIGAR O MOTOR PRECISA VERIFICAR SE ESTA LIGADO
-     */
+    protected void ligar() {
+        System.out.println("LIGANDO MOTOR!");
+        this.ligado = true;
+    }
+
     protected void desligar() {
-        if (isLigado()) {
-            this.ligado = false;
-        }
+        System.out.println("DESLIGANDO MOTOR!");
+        this.ligado = false;
     }
 
     /**
      * VERIFICA SE O MOTOR ESTA LIGADO OU DESLIGADO
-     * @return {boolean} 
+     * @return {boolean} ligado
      */
     protected boolean isLigado() {
-        if (!(this.ligado)) {
-            return false;
-        }
-        return true;
+        return this.ligado;
     }
 
 }

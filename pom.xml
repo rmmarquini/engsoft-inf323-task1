@@ -3,8 +3,8 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>br.unicamp.ic</groupId>
     <artifactId>tarefa_aviao</artifactId>
-    <name>tarefa_aviao_incompleta</name>
-    <version>esoftXX</version>
+    <name>tarefa_aviao_completa</name>
+    <version>esoft38</version>
     
     <properties>
         <maven.compiler.source>1.8</maven.compiler.source>
